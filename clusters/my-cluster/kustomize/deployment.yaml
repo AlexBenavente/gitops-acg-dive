@@ -16,5 +16,5 @@ spec:
     spec:
       containers:
       - name: hello
-        image: gitops-acg-dive:helloAlexv1.0
+        image: localhost:5000/gitops-acg-dive:helloAlexv1.0
         imagePullPolicy: IfNotPresent
