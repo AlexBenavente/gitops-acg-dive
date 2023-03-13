@@ -4,3 +4,4 @@ resources:
   - test-namespace.yaml
   - nginx.yaml
   - deployment.yaml
+  - python-namespace.yaml
