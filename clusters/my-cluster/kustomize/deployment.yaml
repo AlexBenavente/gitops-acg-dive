@@ -1,20 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello
+  name: myapp-deployment
   namespace: alexpython
   labels:
-    app: hello
+    app: myapp
 spec:
   selector:
     matchLabels:
-      app: hello
+      app: myapp
   template:
     metadata:
       labels:
-        app: hello
+        app: myapp
     spec:
       containers:
-      - name: hello
-        image: gitops-acg-dive:helloAlexv1.0
+      - name: myapp
+        image: myapp
         imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8000
