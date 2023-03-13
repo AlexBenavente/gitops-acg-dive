@@ -17,3 +17,4 @@ spec:
       containers:
       - name: hello
         image: gitops-acg-dive:helloAlexv1.0
+        imagePullPolicy: IfNotPresent
